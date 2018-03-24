@@ -12,23 +12,22 @@ The goals / steps of this project are the following:
 * Reflect on your work in a written report
 
 
-[//]: # (Image References)
-
-[image1]: Finding-Lane-Lines-on-the-Road/test_images/output_output_solidWhiteCurve.jpg?raw=true "Title"
-
 ---
 
 ### Reflection
 
 ### 1. Describe your pipeline. As part of the description, explain how you modified the draw_lines() function.
 
-My pipeline consisted of 5 steps. First, I converted the images to grayscale, then I .... 
+My pipeline consisted of 5 steps. 
+First, I converted the images to grayscale, science grey scale picture is better identify identify the boundaries.
+
+then I gaussian blur technique to decrease the noise in the image so I can find clearer edges.
+
+Next step I use canny function find edges of individual item in picture.
 
 In order to draw a single line on the left and right lanes, I modified the draw_lines() function by ...
 
-If you'd like to include images to show how the pipeline works, here is how to include an image: 
 
-![alt text][image1]
 
 
 ### 2. Identify potential shortcomings with your current pipeline
