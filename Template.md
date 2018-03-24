@@ -35,13 +35,13 @@ In order to draw a single line on the left and right lanes, I modified the draw_
 ### 2. Identify potential shortcomings with your current pipeline
 
 
-One potential shortcoming would be what would happen when ... 
+One potential shortcoming would be what would happen when the car turning the line in the road will be a curve and we have limited the minimal length of lien so most part of line will not be recognized by the hugh line method.
 
-Another shortcoming could be ...
+Another shortcoming could be if there is no solid line and the dotted line may be short or some bright spot existed in the road we cannot get a nice mean and slope. 
 
 
 ### 3. Suggest possible improvements to your pipeline
 
-A possible improvement would be to ...
+A possible improvement would be to use the region = (x_min,x_max) to constraint the line. If the calculate result is over the regoin I will put the boundary of the region instead of calculated redult
 
-Another potential improvement could be to ...
+Another potential improvement could be to split one solid line each side two 2. The first part will be start to mid point and onher is mid point to end.
