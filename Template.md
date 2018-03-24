@@ -21,13 +21,15 @@ The goals / steps of this project are the following:
 My pipeline consisted of 5 steps. 
 First, I converted the images to grayscale, science grey scale picture is better identify identify the boundaries.
 
-then I gaussian blur technique to decrease the noise in the image so I can find clearer edges.
+then, I gaussian blur technique to decrease the noise in the image so I can find clearer edges.
 
-Next step I use canny function find edges of individual item in picture.
+Next step, I use canny function find edges of individual item in picture.
 
-In order to draw a single line on the left and right lanes, I modified the draw_lines() function by ...
+And then, I select the region in image that infront of the driving car.
 
+The last step is use Hugh line method to draw lines in picture.
 
+In order to draw a single line on the left and right lanes, I modified the draw_lines() function by draw two lines on start and end coordinates. The firstep is calculate the slope and center in each lines, and then seperate the side of line by slope. Coordinates on the y axis is manully choosen to bottom of picture 0.4 hight of picture. The coordinates on the x axis can be calculated by mean slope and mean of x center on each side.
 
 
 ### 2. Identify potential shortcomings with your current pipeline
